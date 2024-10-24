@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <script>
+        function runTasks() {
+           
+            console.log("Odd numbers between 0 and 60:");
+            for (let i = 1; i < 60; i += 2) {
+                console.log(i);
+            }
+
+       
+            let age = parseInt(prompt("Enter your age:"));
+            if (age >= 1 && age <= 17) {
+                console.log("You are underage");
+            } else if (age >= 18 && age <= 100) {
+                console.log("You are an adult");
+            } else {
+                console.log("Invalid input");
+            }
+
+          
+            let names = ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah", "Ian", "Jack"];
+
+            
+            console.log("4th name in the array:", names[3]);
+
+            console.log("All names in the array:");
+            for (let name of names) {
+                console.log(name);
+            }
+
+           
+            let isEmployed = true;
+            let creditScore = 720; 
+            let isSelfEmployed = false; 
+            let yearsInBusiness = 3; 
+
+            if ((isEmployed && creditScore > 700) || (isSelfEmployed && creditScore > 650 && yearsInBusiness > 2)) {
+                console.log("Eligible for loan");
+            } else {
+                console.log("Not eligible for loan");
+            }
+
+          
+            let a = 15;
+            let b = 5;
+            let c = 20;
+            let name = "Kelvin";
+
+            console.log("Result of the expression:");
+            console.log((a > b && !(c < b || name !== "kelvin")) || (a + b * 2 < c && !false));
+
+            
+            console.log("Explanation: The expression evaluates to false.");
+
+           
+            function add(a, b) {
+                return a + b;
+            }
+
+      
+            let sum = add(5, 10);
+            console.log("Sum of 5 and 10:", sum);
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Tasks</h1>
+    <button onclick="runTasks()">Run Tasks</button>
+</body>
+</html>
